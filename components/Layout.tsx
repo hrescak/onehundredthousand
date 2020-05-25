@@ -65,6 +65,8 @@ const Layout: React.FunctionComponent<Props> = ({
         <meta name="description" content="Visualizing lives lost in coronavirus as american cities"/>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:creator" content="@mhrescak"/>
+        <meta name="twitter:image" content="https://100000.city/meta/og-image.png"/>
+        <meta name="twitter:description" content="Visualizing lives lost in coronavirus as american cities"/>
         <meta name="og:url" content="https://100000.city"/>
         <meta name="og:type" content="website"/>
         <meta name="og:title" content="100,000"/>
