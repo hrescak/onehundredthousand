@@ -18,7 +18,6 @@ const theme= {
 }
 
 const GlobalStyle = createGlobalStyle`
-  @import 'https://rsms.me/inter/inter.css';
   html {
     box-sizing: border-box;
     font-size: 16px;
@@ -42,6 +41,15 @@ type Props = {
 
 const Wrapper = styled.div`
   padding: 2rem;
+  @media (max-width: ${p=>p.theme.breakpoints.l}) {
+    padding: 1.5rem;
+  }
+  @media (max-width: ${p=>p.theme.breakpoints.m}) {
+    padding: 1.2rem;
+  }
+  @media (max-width: ${p=>p.theme.breakpoints.s}) {
+    padding: 1rem;
+  }
 `
 
 const Layout: React.FunctionComponent<Props> = ({
@@ -54,6 +62,19 @@ const Layout: React.FunctionComponent<Props> = ({
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Visualizing lives lost in coronavirus as american cities"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:creator" content="@mhrescak"/>
+        <meta name="og:url" content="https://100000.city"/>
+        <meta name="og:type" content="website"/>
+        <meta name="og:title" content="100,000"/>
+        <meta name="og:description" content="Visualizing lives lost in coronavirus as american cities"/>
+        <meta name="og:image" content="/meta/og-image.png"/>
+        <meta name="og:image:alt" content="Visualizing lives lost in coronavirus as american cities"/>
+        <meta name="og:locale" content="en_US"/>
+        <meta name="og:site_name" content="100000"/>
+        <link rel="icon" href="/meta/icon.png"/>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
       </Head>
       {children}
     </Wrapper>
