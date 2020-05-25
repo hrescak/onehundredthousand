@@ -44,7 +44,7 @@ const WithStaticProps = ({ items }: Props) => (
   <Layout title="100,000">
     <List items={items} />
     <About>In May 2020, the total number of lives lost from the coronavirus outbreak in the United States crossed one hundred thousand - an unimaginable number. 
-      This page aims to make this number more concrete by showing cities in the US with population close to 100,000.
+      This page aims to make it more concrete by showing cities in the US with population close to 100,000.
     The <a href="https://www.nytimes.com/interactive/2020/05/24/us/us-coronavirus-deaths-100000.html" target="_blank">people who lost their lives</a> in the last couple of months would be able to fill any of these cities with life.
       <Note>
       <hr/>
