@@ -81,6 +81,8 @@ const Layout: React.FunctionComponent<Props> = ({
       {children}
     </Wrapper>
     <GlobalStyle/>
+    <script data-goatcounter="https://100000.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   </ThemeProvider>
 )
 
