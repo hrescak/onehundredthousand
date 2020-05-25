@@ -33,7 +33,7 @@ const Accent = styled.span`
 const ListItem: React.FunctionComponent<Props> = ({ data }) => {
   const [showPopulation,setShowPopulation] = useState(false)
   return(
-  <Title color={shadeForPopulation(data.population)} onClick={e=>setShowPopulation(!showPopulation)}>
+  <Title color={shadeForPopulation(data.population)} onClick={()=>setShowPopulation(!showPopulation)}>
     {!showPopulation &&
       <span>{data.name}</span>
     }
