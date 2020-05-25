@@ -1,10 +1,23 @@
-// You can include shared interfaces/types in a separate file
-// and then use them in any component by importing them. For
-// example, to import the interface below do:
-//
-// import User from 'path/to/interfaces';
+import 'styled-components'
 
-export type User = {
-  id: number
+export type City = {
   name: string
+  population: number
+}
+
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    colors: {
+      background: string
+      text: string
+      accent: string
+    }
+    fontFamily: string,
+    breakpoints:{
+      xl: string
+      l: string
+      m: string
+      s: string
+    }
+  }
 }

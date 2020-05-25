@@ -1,19 +1,24 @@
 import * as React from 'react'
 import ListItem from './ListItem'
-import { User } from '../interfaces'
+import { City } from '../interfaces'
+import styled from 'styled-components'
 
 type Props = {
-  items: User[]
+  items: City[]
 }
 
+const ListWrapper = styled.div`
+  line-height: 1.2;
+`
+
 const List: React.FunctionComponent<Props> = ({ items }) => (
-  <ul>
+  <ListWrapper>
     {items.map((item) => (
-      <li key={item.id}>
+      <span key={item.name}>
         <ListItem data={item} />
-      </li>
+      </span>
     ))}
-  </ul>
+  </ListWrapper>
 )
 
 export default List
